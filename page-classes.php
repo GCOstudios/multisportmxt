@@ -22,7 +22,7 @@ get_header(); ?>
 
 					<?php the_title( '<h1>', '</h1>' ); ?>
 
-					<?php
+					<!-- <?php
 					global $post;
 					echo '<div class="class-third">';
 					if ( get_post_meta( $post->ID, '_fc_class_day', true ) ) :
@@ -37,6 +37,35 @@ get_header(); ?>
 					echo '</div>';
 					echo '<div class="class-third-last">';
 					$text = get_post_meta( $post->ID, '_fc_class_cost', true ); echo $text;
+					echo '</div>';
+					?> -->
+
+					<?php
+					echo '<div class="class-third">';
+						$workout_date = get_field('date', false, false);
+						$workout_date = new DateTime($workout_date);
+
+						if( get_field('workout_date') ) {
+							echo $workout_date->format('M j, Y');
+						} else {
+							echo 'N/A';
+						}
+					echo '</div>';
+
+					echo '<div class="class-third">';
+						if( get_field('workout_type') ) {
+							the_field('workout_type');
+						} else {
+							echo 'N/A';
+						}
+					echo '</div>';
+
+					echo '<div class="class-third-last">';
+						if( get_field('workout_time') ) {
+							the_field('workout_time');
+						} else {
+							echo 'N/A';
+						}
 					echo '</div>';
 					?>
 

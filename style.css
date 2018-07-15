@@ -1,0 +1,444 @@
+/*
+ Theme Name:   Multisport XT
+ Theme URI:    https://multisport-xt.com/
+ Description:  A child theme based on the fitcoach parent theme.
+ Author:       Jose Guerra
+ Author URI:   http://joseguerra.uk
+ Template:     fitcoach
+ Version:      1.0.0
+ Text Domain:  multisportxt
+*/
+
+/* Making video responsive */
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* Workout overview styles */
+.overview {
+	margin-top: 1.75em;
+}
+
+/* Workout gallery */
+.gallery-columns-4 .gallery-item {
+	max-width: 24%;
+}
+
+
+/* Homepage Slider */
+#sequence {
+	border-bottom: 4px solid #04b0ef;
+}
+
+/* Homepage Thumbnails with Overlays */
+.services_top_mn {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.item-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 6.25rem;
+}
+
+.jm-item {
+	padding: 10px;
+	display: inline-block;
+	text-align: left;
+}
+.jm-item-wrapper {
+	position: relative;
+	padding: 7px;
+	background: #fff;
+}
+.jm-item-image {
+	position: relative;
+	overflow: hidden;
+}
+.jm-item-image img {
+	display: block;
+}
+.jm-item-title {
+    position: absolute;
+    left: -10px;
+    bottom: 17px;
+    background: #3381c7; /* Original color #ff6b0e */
+    line-height: 1.5em;
+    font-weight: normal;
+    padding: 7px 9px 6px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.4em;
+}
+.jm-item-overlay {
+	background: #000;
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	-webkit-transition: opacity 0.5s ease-in 0s;
+	-moz-transition: opacity 0.5s ease-in 0s;
+	-o-transition: opacity 0.5s ease-in 0s;
+	transition: opacity 0.5s ease-in 0s;
+}
+.jm-item-wrapper:hover .jm-item-overlay {
+	opacity: 0.3;
+}
+.jm-item-button {
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	margin-left: -25px;
+}
+.jm-item-button a {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #dc6263;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    line-height: 50px;
+    -webkit-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
+    transition: all 0.2s ease-in 0s;
+    text-decoration: none !important;
+    display: block;
+}
+.jm-item-button a:hover {
+	background: #3b3b3b;	
+}
+.second .jm-item-wrapper .jm-item-title {
+	-webkit-transition: all 0.3s ease-in 0s;
+	-moz-transition: all 0.3s ease-in 0s;
+	-o-transition: all 0.3s ease-in 0s;
+	transition: all 0.3s ease-in 0s;
+}
+.second .jm-item-wrapper:hover .jm-item-title {
+	/* left: -400%; */
+	bottom: 88%;
+	left: 50px;
+}
+.second .jm-item-description {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 50px 10px 10px 20px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;	
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+	top: 100%;
+	-webkit-transition: all 0.5s ease-in 0s;
+	-moz-transition: all 0.5s ease-in 0s;
+	-o-transition: all 0.5s ease-in 0s;
+	transition: all 0.5s ease-in 0s;
+}
+.second .jm-item-wrapper:hover .jm-item-description {
+	top: 0;
+}
+
+/* Homepage Services Section */
+.site-home {
+	margin-bottom: 10rem;
+}
+
+.services-container {
+	background-color: #ffffff;
+	margin-bottom: 5rem;
+    padding: 5rem 0 8rem;
+	border-top: 4px solid #dc6263;
+	border-bottom: 4px solid #04b0ef;
+}
+
+.services-title {
+    text-align: center;
+	margin-bottom: 4rem;
+}
+
+.services-items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+	color: #737F85;
+}
+
+.service-item {
+    max-width: 270px;
+	padding: 1rem 2rem;
+	background-color: #f7f7f7;
+	text-align: center;
+}
+
+.service-item .fa {
+	font-size: 34px;
+	color: #5ca2e0;
+	margin-top: 1rem;
+}
+
+.service-item-title {
+	font-size: 26px;
+	margin-bottom: 1rem;
+}
+
+/* Item styling */
+
+.entry-content .item {
+	display: block;
+	border-bottom: 1px solid #ccc;
+	overflow: auto;
+	margin-bottom: 2rem;
+}
+
+.item-picture {
+	position: relative;
+	display: inline-block;
+	margin-right: 20px;
+	float: left;
+}
+
+.item-title {
+	font-size: 18px;
+	position: absolute;
+	bottom: 36px;
+	left: 0;
+	background-color: #3381c7;
+	color: white;
+	padding: 7px 9px 6px;
+}
+
+/* Custom Section for table */
+.table-section {
+	background-color: #d7d7d7;
+	margin: 0px -20px;
+	display: block;
+	padding: 50px 20px;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	border-bottom: 0px solid #ccc;
+}
+
+/* Custom Section for CTA Button */
+.cta-section {
+	background-color: #f4f4f4;
+	margin: 0px -20px 0px;
+	display: block;
+	padding: 50px 20px;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.cta-button {
+	font-size: 14px;
+	padding: 12px 25px;
+	background-color: #fdd200;
+	color: white;
+	border-radius: 4px;
+	text-transform: uppercase;
+}
+
+
+/* Custom Section for retulvideo */
+.retulvideo-section {
+	background-color: #fff;
+	margin: 0px -20px;
+	display: block;
+	padding: 50px 20px;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	border-bottom: 0px solid #ccc;
+}
+
+
+
+
+/* Custom Buttons */
+.btn-green {
+	margin-right: 10px;
+	padding: 7px 9px 6px;
+	background-color: #41ca82;
+	color: white;
+}
+
+.btn-green:hover {
+	color: yellow;
+}
+
+.btn-red {
+	margin-right: 40px;
+	padding: 7px 9px 6px;
+	background-color: #dc6263;
+	color: white;
+}
+
+.btn-red:hover {
+	color: yellow;
+}
+
+.btn-purple {
+	margin-right: 40px;
+	padding: 7px 9px 6px;
+	background-color: #c7aae4;
+	color: white;
+}
+
+.btn-purple:hover {
+	color: grey;
+}
+
+
+/* Workouts Single Post Type */
+.type-classes .item {
+	padding: 20px 0;
+	margin-bottom: 10px;
+}
+
+.type-classes .item-last {
+	border-bottom: 0;
+}
+
+.details,
+.overview {
+	border: 0px solid #999999;
+	padding-left: 10px;
+	padding-top: 8px;
+	background-color: #04b0ef;
+	color: white;
+	margin-bottom: 2rem;
+}
+
+.fc-single-header {
+	padding-bottom: 0;
+}
+
+.fc-single-header .entry-title {
+	margin-bottom: 5px;
+}
+
+.workout_title {
+	display: block;
+	color: #666666;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.workout_date {
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #dc6263;
+}
+
+.classes-template-default .entry-content {
+	margin-top: 0;
+}
+
+.classes-template-default .entry-content h3 {
+	background-color: skyblue;
+	color: white;
+	margin-bottom: 10px;
+	padding: 5px 0;
+}
+
+.class-third:first-of-type {
+	border-left: 1px dotted #999;
+}
+
+.class-third-last {
+	border-right: 1px dotted #999;
+}
+
+.class-address {
+	border: 1px dotted #999;
+}
+
+.workout-section {
+	margin-bottom: 50px;
+	overflow: auto;
+}
+
+.cardio-entry {
+	padding: 1rem 5px;
+}
+
+.downloads-entry {
+	padding: 1rem 0;
+	overflow: auto;
+}
+
+
+/* Custom Contact Page */
+
+.custom-contact form {
+	margin-bottom: 40px;
+}
+
+
+/* Footer Section */
+.site-footer {
+	border-top: 4px solid #dc9f62;
+}
+
+.site-footer .widget-title {
+	margin-bottom: 1rem;
+}
+
+.site-footer .icons-large {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding: 10px 15px;
+}
+
+.site-footer .icons-large li {
+	margin: 0 10px 6px 0;
+}
+
+.site-footer .icons-large img {
+	width: 73px;
+}
+
+.site-footer #ctf .ctf-item {
+	padding: 0 5px 15px;
+}
+
+.site-footer .ctf-tweet-actions {
+	/* margin-right: 50px!important; */
+	margin-left: 50px!important;
+	text-align: center;
+}
+
+.site-footer .menu-mxt-sub-menu-footer-container {
+	margin-top: 15px;
+}
+
+.site-footer .menu-mxt-sub-menu-footer-container li {
+	margin-bottom: 10px;
+}

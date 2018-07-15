@@ -78,7 +78,7 @@ get_header(); ?>
 							elseif( get_row_layout() == 'featured_video'):
 								// do something
 								echo '<div class="embed-container">';
-									the_sub_field('video');
+								the_sub_field('video');
 								echo '</div>';
 							elseif( get_row_layout() == 'featured_slider'):
 								echo '<div id="sequence" style="height:541px;">';
@@ -115,7 +115,7 @@ get_header(); ?>
 							endif;
 						endwhile;
 					else:
-						the_post_thumbnail('large', array('class' => 'fc-class-image'));
+						// the_post_thumbnail('large', array('class' => 'fc-class-image'));
 					endif;
 				?>
 

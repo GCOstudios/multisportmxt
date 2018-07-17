@@ -6,7 +6,14 @@
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="featured-image-container">
-			<?php the_post_thumbnail('thumbnail', array('class' => 'fc-post-image')); ?>
+			<?php
+				if ( has_post_thumbnail() ) {
+					the_post_thumbnail('thumbnail', array('class' => 'fc-post-image'));
+				} else { ?>
+					<img src="https://placehold.it/250/200" />	
+			<?php
+				}	
+			?>
 		</div>
 		<div class="content-container">
 			<header class="entry-header">

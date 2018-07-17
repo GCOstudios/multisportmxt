@@ -393,6 +393,28 @@
 	overflow: auto;
 }
 
+/* Blog Section */
+
+.blog-wrapper article {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.blog-wrapper article .featured-image-container {
+	flex: 1;
+	max-width: 250px;
+	margin-right: 30px;
+}
+
+.blog-wrapper article .featured-image-container img {
+	padding-top: 0;
+}
+
+.blog-wrapper article .content-container {
+	flex: 1;
+}
+
 
 /* Custom Contact Page */
 

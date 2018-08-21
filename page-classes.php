@@ -42,7 +42,7 @@ get_header(); ?>
 
 					<?php
 					echo '<div class="class-third">';
-						$workout_date = get_field('date', false, false);
+						$workout_date = get_field('workout_date', false, false);
 						$workout_date = new DateTime($workout_date);
 
 						if( get_field('workout_date') ) {

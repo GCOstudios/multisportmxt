@@ -422,6 +422,11 @@
 	margin-bottom: 40px;
 }
 
+.contact-form textarea {
+	height: 400px!important;
+	width: 100%!important;
+}
+
 /* Page Template Full Width */
 .page-template-page-fullwidth,
 .single-classes {

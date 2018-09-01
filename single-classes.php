@@ -185,6 +185,8 @@ get_header(); ?>
 				</div><!-- .entry-content -->
 
 			</article><!-- #post-## -->
+			
+			<?php echo do_shortcode( '[cptapagination custom_post_type="Classes" post_limit="1"]' ); ?>
 
 			</main><!-- #main -->
 		</div><!-- #primary -->

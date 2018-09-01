@@ -422,6 +422,15 @@
 	margin-bottom: 40px;
 }
 
+/* Page Template Full Width */
+.page-template-page-fullwidth {
+	background-color: white;
+}
+
+.page-template-page-fullwidth .page-wrapper {
+	border: 0;
+}
+
 
 /* Footer Section */
 .site-footer {

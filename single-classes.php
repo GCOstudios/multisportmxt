@@ -186,7 +186,10 @@ get_header(); ?>
 
 			</article><!-- #post-## -->
 			
-			<?php echo do_shortcode( '[cptapagination custom_post_type="Classes" post_limit="1"]' ); ?>
+			<?php if ( shortcode_exists( 'cptapagination' )) {
+				echo do_shortcode( '[cptapagination custom_post_type="Classes" post_limit="1"]' );
+			  }
+			?>
 
 			</main><!-- #main -->
 		</div><!-- #primary -->

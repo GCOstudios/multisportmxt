@@ -423,11 +423,13 @@
 }
 
 /* Page Template Full Width */
-.page-template-page-fullwidth {
+.page-template-page-fullwidth,
+.single-classes {
 	background-color: white;
 }
 
-.page-template-page-fullwidth .page-wrapper {
+.page-template-page-fullwidth .page-wrapper,
+.single-classes .page-wrapper {
 	border: 0;
 }
 

@@ -431,6 +431,14 @@
 	border: 0;
 }
 
+/* Workouts pagination */
+.cpta-Section {
+	display: none;
+}
+
+.list-cptapagination {
+	margin: auto;
+}
 
 /* Footer Section */
 .site-footer {

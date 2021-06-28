@@ -5,7 +5,7 @@
  Author:       Jose Guerra
  Author URI:   http://joseguerra.uk
  Template:     fitcoach
- Version:      1.0.0
+ Version:      1.0.2
  Text Domain:  multisportxt
 */
 
@@ -436,6 +436,26 @@
 .page-template-page-fullwidth .page-wrapper,
 .single-classes .page-wrapper {
 	border: 0;
+}
+
+/* Custom Full Width Page with No Sidebar */
+.fw-no-sidebar {}
+
+.fw-no-sidebar article .entry-header {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+.fw-no-sidebar article {
+	margin-bottom: 0;
+}
+
+.page-template-page-fw-no-sidebar .site-footer {
+	margin-top: 0;
 }
 
 /* Workouts pagination */
